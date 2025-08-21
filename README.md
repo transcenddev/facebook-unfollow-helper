@@ -2,7 +2,7 @@
 
 A safe, rate-limit-aware JavaScript script for bulk unfollowing on Facebook. This script is designed to avoid detection and account restrictions by using human-like timing patterns and conservative batch processing.
 
-[EEC70-E7-A-EA94-403-D-85-A3-4256-C5-CD154-D.png](https://postimg.cc/5HwLQPpg)
+[![Image Alt Text](https://i.postimg.cc/MH6vYKGq/CA2-D7361-D7-E4-4-C1-F-A7-BC-8-B71730-C452-C.png)](https://postimg.cc/9Rkmm2Tn)
 
 ## ⚠️ Important Disclaimer
 
