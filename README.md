@@ -2,9 +2,12 @@
 
 A safe, rate-limit-aware JavaScript script for bulk unfollowing on Facebook. This script is designed to avoid detection and account restrictions by using human-like timing patterns and conservative batch processing.
 
+[EEC70-E7-A-EA94-403-D-85-A3-4256-C5-CD154-D.png](https://postimg.cc/5HwLQPpg)
+
 ## ⚠️ Important Disclaimer
 
 **Use at your own risk.** This script:
+
 - May violate Facebook's Terms of Service
 - Could result in account restrictions or bans
 - Is provided for educational purposes only
@@ -22,6 +25,7 @@ A safe, rate-limit-aware JavaScript script for bulk unfollowing on Facebook. Thi
 ## 🚀 How to Use
 
 ### Prerequisites
+
 - You must be logged into Facebook
 - Navigate to your Facebook profile
 - Ensure you can see your Following list
@@ -48,25 +52,27 @@ The script includes several safety settings that can be adjusted:
 
 ```javascript
 const CONFIG = {
-  minDelay: 4000,           // Minimum 4 seconds between actions
-  maxDelay: 10000,          // Maximum 10 seconds between actions
-  batchSize: 1,             // Process 1 profile at a time
-  batchBreak: 30000,        // 30 second break between each
-  maxActions: 10,           // Stop after 10 unfollows (very safe)
-  scrollDelay: 5000,        // Wait 5 seconds after scrolling
-  maxScrollAttempts: 10     // Maximum scroll attempts to load content
+  minDelay: 4000, // Minimum 4 seconds between actions
+  maxDelay: 10000, // Maximum 10 seconds between actions
+  batchSize: 1, // Process 1 profile at a time
+  batchBreak: 30000, // 30 second break between each
+  maxActions: 10, // Stop after 10 unfollows (very safe)
+  scrollDelay: 5000, // Wait 5 seconds after scrolling
+  maxScrollAttempts: 10, // Maximum scroll attempts to load content
 };
 ```
 
 ### Making it More/Less Conservative
 
 **More Conservative** (safer):
+
 - Increase `minDelay` and `maxDelay`
-- Decrease `maxActions` 
+- Decrease `maxActions`
 - Increase `batchBreak`
 - Run less frequently (once per day maximum)
 
 **Less Conservative** (higher risk):
+
 - Decrease delays (not recommended)
 - Increase `maxActions` (maximum 50 recommended)
 - **Never remove the breaks entirely**
@@ -82,6 +88,7 @@ const CONFIG = {
 ## 📊 What to Expect
 
 When running successfully, you'll see output like:
+
 ```
 🔍 Checking current page...
 ✅ On Following page, proceeding...
@@ -97,6 +104,7 @@ When running successfully, you'll see output like:
 ## 🚨 Warning Signs
 
 **Stop immediately if you see:**
+
 - Facebook asking you to verify your identity
 - Any security warnings or captchas
 - "Action Blocked" messages
@@ -107,17 +115,20 @@ If you encounter any of these, wait at least 24 hours before trying again.
 ## 🔧 Troubleshooting
 
 ### "No Following buttons found"
+
 - Make sure you're on the Following page, not Followers
 - Try scrolling down manually to load profiles
 - Refresh the page and try again
 - Check if Facebook has changed their layout
 
 ### Script clicking wrong elements
+
 - Facebook frequently changes their structure
 - The script may need updates for new layouts
 - Try refreshing and running again
 
 ### Account warnings or restrictions
+
 - Stop using the script immediately
 - Wait at least 24-48 hours
 - Consider manual unfollowing instead
@@ -132,6 +143,7 @@ Contributions are welcome! Please:
 4. Submit a pull request with a clear description
 
 ### Areas for improvement:
+
 - Better profile name detection
 - Support for different Facebook layouts
 - Enhanced error handling
